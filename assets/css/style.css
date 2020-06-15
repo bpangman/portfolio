@@ -77,30 +77,6 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-footer {
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: var(--secondary-color);
-}
-
 section {
     padding: 60px;
 }
@@ -267,7 +243,7 @@ section {
     display: flex;
 }
 
-/* ABOUT ME SECTION */
+/* CSS FOR GRID SECTIONS */
 
 .about-panel {
     display: flex;
@@ -301,53 +277,25 @@ section {
     border-color: var(--tertiary-color);
 }
 
-/* WORK PORTION */
-
-.work-panel {
-    display: flex;
-    width: 25%;
-    order: 1;
-}
-
-.work-panel h2 {
-    padding-right: 30px;
-}
-
-.main-work {
-    flex: 1;
-    order: 2;
-}
-
-.main-work-grid {
-    display: grid;
-    max-width: 940px;
-    margin: 0 auto;
-    grid-template-columns: 150px repeat(2, 1fr);
-    grid-template-rows: repeat(3, 25%);
-    grid-gap: 10px;
-}
-
-.work-grid-item {
-    background-color: orange;
-    border: solid;
-    padding: 1em;
-    color: black;
-}
-
 /* CONTACT ME PORTION */
 
 .slot6 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     padding-left: 2em;
-    padding-right: 2em;
+}
+
+.slot6 ul li a {
+    padding-left: 1em;
+    padding-right: 1em;
     font-size: 1.65vw;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -397,6 +345,7 @@ section {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
@@ -453,6 +402,7 @@ section {
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
 @media screen and (max-width: 575px) {
     .hero-form button {
         width: 100%;
