@@ -137,6 +137,7 @@ section {
     padding-top: 1em;
     padding-bottom: 1em;
     grid-auto-rows: minmax(400px, auto);
+    flex-wrap: wrap;
 }
 
 .nested {
@@ -157,6 +158,48 @@ section {
 .nested > div {
     border: #333 1px dashed;
     padding: 1em;
+}
+
+.slot1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.slot2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.slot3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.slot4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.slot5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.slot6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .box1 {
@@ -194,31 +237,6 @@ section {
     grid-row-end: 4;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* RANDOM FLEX COMMANDS */
 
 .flex-row {
@@ -229,20 +247,13 @@ section {
 
 .about-panel {
     display: flex;
-    width: 25%;
-    order: 1;
 }
 
 .about-panel h2 {
-    padding-right: 30px;
+    padding-right: 1em;
 }
 
-.main-about {
-    flex: 1;
-    order: 2;
-}
-
-.main-about p {
+.slot2 p {
     line-height: 1.7;
     color: var(--tertiary-color);
     font-size: 20px;
@@ -259,7 +270,7 @@ section {
 
 .primary-border {
     border-color: var(--primary-color);
-    padding-right: 30px;
+    height: 100%;
 }
 
 .secondary-border {
