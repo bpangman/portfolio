@@ -187,7 +187,7 @@ section {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url("../images/example1.jpg");
+    background-image: url("../images/dnd.png");
     background-size: 600px auto;
     display: flex;
     flex-direction: row;
